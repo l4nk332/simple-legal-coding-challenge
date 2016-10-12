@@ -1,0 +1,123 @@
+
+// Colors
+$simple-legal:    #3daadf
+$shade-white:     #f5f4f5
+$white:           #f6f6f6
+$link-color:      #dc2e59
+$base-color:      #2790c4
+$pending-color:   $link-color
+$complete-color:  #7bcb59
+
+// Fonts
+$roboto:          'Roboto', sans-serif
+$lato-light:            'Lato', sans-serif
+
+// Mixins
+@mixin flex($dir: row, $wrap: wrap, $justify: center, $align: center)
+  display: flex
+  flex-flow: $dir $wrap
+  justify-content: $justify
+  align-items: $align
+
+// Base
+body
+  background-color: $shade-white
+  color: $base-color
+  font-family: $roboto
+
+h1
+  font-family: $lato-light
+  @media(max-width: 450px)
+    font-size: 24px
+
+h2, h3, h4, h5, h6
+  font-family: $roboto
+
+a
+  color: $link-color
+
+h5, th, dt
+  color: darken($base-color, 10%)
+
+div
+  transition: all 300ms ease-in-out
+
+a
+  transition: all 150ms ease-in-out
+
+// Resets
+.list-group, dl
+  margin: 20px 0
+
+a.list-group-item, button.list-group-item
+  color: $base-color
+  text-align: center
+
+.panel > .panel-heading
+  background-color: $simple-legal
+  color: $white
+
+.progress-bar-info
+  background-color: $pending-color
+
+.progress-bar-success
+  background-color: $complete-color
+
+// Modules
+
+// Charts
+.chart-header
+  text-align: center
+
+.chart-flex-wrapper
+  @include flex
+
+%chart-container
+  margin: 15px auto
+
+.chart-ab-container
+  @extend %chart-container
+  width: 50%
+  min-width: 200px
+  height: 200px
+
+.chart-c-container
+  @extend %chart-container
+  width: 100%
+  height: 350px
+
+.chart-a-legend
+  @include flex($justify: space-around)
+
+%chart-a-legend-key
+  color: $white
+  padding: 3px
+  display: block
+
+.chart-a-key-a
+  @extend %chart-a-legend-key
+  background-color: #3daadf
+
+.chart-a-key-b
+  @extend %chart-a-legend-key
+  background-color: #7bcb59
+
+.chart-a-key-c
+  @extend %chart-a-legend-key
+  background-color: #dad43f
+
+.chart-a-key-d
+  @extend %chart-a-legend-key
+  background-color: #dc315b
+
+// AttributePanel
+.attributePanel .table
+  margin: 20px auto
+  max-height: 407px
+  overflow: auto
+
+// MatterInfoPanel
+.matterInfoPanel .tab-content
+  max-height: 258px
+  overflow: auto
+

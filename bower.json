@@ -1,0 +1,22 @@
+{
+  "name": "react_challenge",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "l4nk332 <l4nk332@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/l4nk332/Self-Guided-Teaching",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-bootstrap": "^0.30.5",
+    "bootstrap": "^3.3.7"
+  }
+}
