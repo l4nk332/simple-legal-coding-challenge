@@ -1,5 +1,7 @@
 # SimpleLegal Coding Challenge
 
+![Workflow screenshots](https://github.com/l4nk332/simple-legal-coding-challenge/blob/master/assets/screenshot-panel.png)
+
 ## Set-up
 
 1. Pull Repo down locally to your machine.
