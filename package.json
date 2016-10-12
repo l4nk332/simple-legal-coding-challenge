@@ -1,13 +1,13 @@
 {
-  "name": "react_challenge",
+  "name": "simple-legal-coding-challenge",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A redesign of a legal matter page.",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Ian Jabour",
+  "license": "MIT",
   "dependencies": {
     "bower": "^1.7.9"
   },

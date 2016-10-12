@@ -1,12 +1,12 @@
 {
-  "name": "react_challenge",
-  "description": "",
-  "main": "index.js",
+  "name": "simple-legal-coding-challenge",
+  "description": "A redesign of a legal matter page",
+  "main": "index.html",
   "authors": [
     "l4nk332 <l4nk332@gmail.com>"
   ],
-  "license": "ISC",
-  "homepage": "https://github.com/l4nk332/Self-Guided-Teaching",
+  "license": "MIT",
+  "homepage": "https://github.com/l4nk332/simple-legal-coding-challenge",
   "ignore": [
     "**/.*",
     "node_modules",
